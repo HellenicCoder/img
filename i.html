@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Resize Compress Images</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="i.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <script src="i.js" defer></script>
+   </head>
+   <body>
+     <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="icons8-upload-48.png" alt="">  
+            <p>Browse file to opload</p>      
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="colmn width">
+                    <label>width</label>
+                    <input type="number">
+                </div>
+                <div class="colmn height">
+                    <label>Height</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row checkboxes">
+                <div class="colmn ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">lock aspect ratio</label>
+                </div>
+                <div class="colmn quality">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">Reduce ratio</label>
+                </div>
+            </div>
+            <button class="download-btn">Download Image</button>
+        </div>
+     </div>
+   </body>
+</html>
